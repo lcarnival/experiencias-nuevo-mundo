@@ -1,0 +1,217 @@
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*  inedex */
+
+.titulo-principal {
+    color: white;
+    font-family: fantasy;
+    font-size:xx-large;
+    width: 50%;
+    font-weight: 900;
+
+} 
+
+.main-header {
+    background-image: url(../img/portada\ casa.png);
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-container nav {
+    width: 100%;
+
+}
+
+.nav-list {
+display: flex;
+justify-content:flex-end;
+padding-left: 100px;
+padding-right: 50px;
+
+
+}
+
+.nav-list li a {
+    color: white;
+}
+
+.nav-list li + li:before{
+    content: " | ";
+    padding: 0 40px ;
+    color: white;
+    
+}
+
+.reservation {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-content: space-around;
+    gap: 15px;
+
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    
+}
+
+.main-section {
+
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    margin: 50px;
+    gap: 50px;
+    
+
+}
+
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+   
+}
+
+h2 {
+    color: darksalmon;
+    font-family: cursive;
+    
+}
+
+.final-list {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: safe;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px #b6b6b6;
+    padding: 10px;
+
+}
+
+.card p {
+    text-align: center;
+}
+
+
+/* Responsive Mobile */
+
+@media (max-width: 375px) {
+    .card-container {
+        flex-direction: column;
+    }
+
+    .titulo-principal {
+        font-size: medium;
+    }
+
+    .main-header { 
+        background-image: url(../img/portada\ casa.png);
+        height: 277px;
+
+    }
+
+    .nav-list {
+        flex-direction: column;
+        content: none;
+        align-items: flex-end;
+        
+    }
+
+   
+
+}
+
+/*  Activities */
+
+.nav-listado {
+   
+   display: flex;
+   flex-direction: row;
+   
+}
+
+.boton{
+
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid;
+    color: bisque;
+    text-align: center;
+}
+
+h1 {
+    color: darksalmon;
+    font-family: cursive;
+}
+
+.nav-listado { 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+    
+}
+
+
+
+.carrusel {
+
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     gap: 10px;
+}
+
+.complete-page {
+    background-color: #fdedd8
+
+}
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.carousel-slide {
+display: flex;
+flex-direction: row;
+
+}
+
