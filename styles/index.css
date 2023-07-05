@@ -35,6 +35,7 @@ a{
 
 }
 
+
 .nav-container {
     display: flex;
     flex-direction: row;
@@ -50,6 +51,7 @@ display: flex;
 justify-content:flex-end;
 padding-left: 100px;
 padding-right: 50px;
+flex-wrap: wrap;
 
 
 }
@@ -130,7 +132,7 @@ h2 {
 }
 
 
-/* Responsive Mobile */
+/* Responsive Mobile Index */
 
 @media (max-width: 375px) {
     .card-container {
@@ -143,7 +145,7 @@ h2 {
 
     .main-header { 
         background-image: url(../img/portada\ casa.png);
-        height: 277px;
+        min-height: 277px;
 
     }
 
@@ -151,9 +153,11 @@ h2 {
         flex-direction: column;
         content: none;
         align-items: flex-end;
+        display: none;
         
     }
 
+   
    
 
 }
@@ -209,9 +213,35 @@ h1 {
     justify-content: center;
 }
 
-.carousel-slide {
-display: flex;
-flex-direction: row;
-
+.btn {
+    display: block;
+    width:auto;
+    border-radius: 5px;
+    padding: 5px;
+    
 }
 
+.btn:hover {
+    background-color: orange;
+    
+}
+
+.input-group {
+
+    width:-webkit-fill-available;
+    border-radius: 5px;
+    padding: 5px;
+    
+}
+
+
+/*  Escapadas */
+
+.lista {
+    display: flex;
+    flex-direction: row;
+}
+
+.complete-page {
+    background-color: #fdedd8;
+}
