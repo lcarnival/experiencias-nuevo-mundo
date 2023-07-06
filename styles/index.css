@@ -157,7 +157,12 @@ h2 {
         
     }
 
-   
+   .input-group {
+    padding: 10px;
+
+
+   }
+
    
 
 }
@@ -173,6 +178,7 @@ h2 {
 
 .list {
     display: flex;
+    color: black;
     justify-content:space-evenly;
     padding-left: 100px;
     padding-right: 50px;
