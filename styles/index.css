@@ -106,6 +106,12 @@ main {
    
 }
 
+.carousel {
+    width: 100%;
+    overflow: scroll;
+    justify-content: left;
+}
+
 h2 {
     color: darksalmon;
     font-family: cursive;
@@ -131,7 +137,10 @@ h2 {
     text-align: center;
 }
 
+.hamburguer {
+    display: none;
 
+}
 /* Responsive Mobile Index */
 
 @media (max-width: 375px) {
@@ -157,11 +166,21 @@ h2 {
         
     }
 
-   .input-group {
-    padding: 10px;
+    .input-group {
+        padding: 10px;
 
 
-   }
+    }
+
+    .hamburguer {
+        display: block;
+        padding-left: 20px;
+    
+    }
+
+
+
+   
 
    
 
@@ -170,9 +189,12 @@ h2 {
 /*  Activities */
 
 .nav-listado {
-   
-   display: flex;
-   flex-direction: row;
+    
+    display: flex;
+    justify-content:center;
+    padding-left: 100px;
+    padding-right: 50px;
+    flex-wrap: wrap;
    
 }
 
@@ -186,6 +208,11 @@ h2 {
     gap: 10px;
 }
 
+.select-small {
+   max-width: 40% !important ;
+
+}
+
 .boton{
 
     display: inline-block;
@@ -194,6 +221,17 @@ h2 {
     color: bisque;
     text-align: center;
 }
+
+.look-activities {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-content: space-around;
+    gap: 15px;
+
+}
+
 
 h1 {
     color: darksalmon;
@@ -222,11 +260,7 @@ h1 {
 
 }
 
-.input-group {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+
 
 .btn {
     display: block;
@@ -249,6 +283,18 @@ h1 {
     
 }
 
+.final {
+    
+        display: flex;
+        justify-content:center;
+        padding-left: 100px;
+        padding-right: 50px;
+        flex-wrap: wrap;
+        
+       
+    }
+
+
 
 /*  Escapadas */
 
@@ -265,3 +311,7 @@ h1 {
     flex-wrap: wrap;
     gap: 10px;
 }
+
+
+/* Lodgement */
+
