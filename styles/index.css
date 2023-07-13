@@ -26,7 +26,7 @@ a{
 } 
 
 .main-header {
-    background-image: url(../img/portada\ casa.png);
+    background-image: url(../img/Alojamientos/portada\ casa.png);
     height: 600px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -110,10 +110,22 @@ main {
     width: 100%;
     overflow: scroll;
     justify-content: left;
+
 }
 
+
+
+.carousel slide {
+ display: flex;
+ justify-content: center;
+ max-width: 100%;
+ height: auto;
+
+}
+
+
 h2 {
-    color: darksalmon;
+    color:#344d60;
     font-family: cursive;
     
 }
@@ -153,7 +165,7 @@ h2 {
     }
 
     .main-header { 
-        background-image: url(../img/portada\ casa.png);
+        background-image: url(../img/Alojamientos/portada\ casa.png);
         min-height: 277px;
 
     }
@@ -208,6 +220,14 @@ h2 {
     gap: 10px;
 }
 
+.diferent {
+    display: flex;
+    color: black;
+
+}
+
+
+
 .select-small {
    max-width: 40% !important ;
 
@@ -234,7 +254,7 @@ h2 {
 
 
 h1 {
-    color: darksalmon;
+    color: #344d60;
     font-family: cursive;
 }
 
@@ -256,8 +276,9 @@ h1 {
 }
 
 .complete-page {
-    background-color: #fdedd8
-
+    
+    background: rgb(157,199,162);
+    background: linear-gradient(174deg, rgba(157,199,162,1) 0%, rgba(255,193,60,1) 100%);
 }
 
 
@@ -314,4 +335,20 @@ h1 {
 
 
 /* Lodgement */
+
+.total {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    justify-content: center;
+    max-width:868px;
+    overflow-x:wrap;
+    
+    
+}
+
+.card {
+    box-shadow: 3px 3px 5px;
+}
+
 
