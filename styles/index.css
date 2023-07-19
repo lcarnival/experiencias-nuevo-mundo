@@ -32,9 +32,11 @@ a{
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
-
 
 .nav-container {
     display: flex;
@@ -47,13 +49,11 @@ a{
 }
 
 .nav-list {
-display: flex;
-justify-content:flex-end;
-padding-left: 100px;
-padding-right: 50px;
-flex-wrap: wrap;
-
-
+    display: flex;
+    justify-content:flex-end;
+    padding-left: 100px;
+    padding-right: 50px;
+    flex-wrap: wrap;
 }
 
 .nav-list li a {
@@ -73,8 +73,18 @@ flex-wrap: wrap;
     flex-direction: column;
     margin: 20px;
     align-content: space-around;
-    gap: 15px;
+    gap: 70px;
 
+}
+
+.reservation h2 {
+    color: white ;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
 }
 
 
@@ -91,36 +101,45 @@ main {
     display: flex;
     flex-direction: column;
     align-items:center ;
-    margin: 50px;
+    margin: 50px 150px 50px 150px;
     gap: 50px;
     
 
 }
 
+.section-white {
+    background-color: white;
+}
+
+.section-grey {
+    background-color: #b6b6b6;
+}
 
 .card-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 15px;
-   
+}
+
+.card-container-housing {
+    max-width:900px;
+    flex-wrap: wrap;
+}
+
+.slide {
+    width: 40px;
+    height: 550px;
 }
 
 .carousel {
     width: 100%;
-    overflow: scroll;
-    justify-content: left;
-
+    
 }
 
-
-
-.carousel slide {
- display: flex;
- justify-content: center;
- max-width: 100%;
- height: auto;
-
+.carousel-item {
+    height: 550px;
+    
 }
 
 
@@ -137,7 +156,7 @@ h2 {
     justify-content: safe;
 }
 
-.card {
+.card-custom {
     border: 1px solid #ccc;
     border-radius: 7px;
     box-shadow: 2px 2px 5px #b6b6b6;
@@ -145,7 +164,7 @@ h2 {
 
 }
 
-.card p {
+.card-custom p {
     text-align: center;
 }
 
@@ -170,12 +189,12 @@ h2 {
 
     }
 
-    .nav-list {
-        flex-direction: column;
-        content: none;
-        align-items: flex-end;
+    .nav-listado {
         display: none;
-        
+    }
+
+    .nav-list {
+        display: none;
     }
 
     .input-group {
@@ -190,15 +209,32 @@ h2 {
     
     }
 
-
+.search-box {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 7px;
+}
 
    
+  
 
-   
+.input-group {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+
+}
 
 }
 
 /*  Activities */
+
+.identificador-secciones {
+padding: 22px;
+
+}
+
 
 .nav-listado {
     
@@ -256,6 +292,15 @@ h2 {
 h1 {
     color: #344d60;
     font-family: cursive;
+}
+
+h5 {
+    color: white;
+}
+
+.subtitle-card {
+    color: white;
+   
 }
 
 .nav-listado { 
@@ -336,19 +381,35 @@ h1 {
 
 /* Lodgement */
 
-.total {
+
+
+
+
+
+
+
+/* Perfil */
+
+.nav-listado {
     display: flex;
-    flex-direction: row;
-    gap: 2px;
-    justify-content: center;
-    max-width:868px;
-    overflow-x:wrap;
+    justify-content:center;
+    padding-left: 100px;
+    padding-right: 50px;
+    flex-wrap: wrap;
+    margin: -50px;
     
     
 }
 
-.card {
-    box-shadow: 3px 3px 5px;
+.nav-listado li a {
+    color: white;
 }
 
+.nav-listado li + li:before{
+    content: " | ";
+    padding: 0 40px ;
+    color: white;
+    
+}
 
+    
