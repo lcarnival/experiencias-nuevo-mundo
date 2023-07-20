@@ -50,9 +50,10 @@
 
                 <h1 class="titulo-principal">Experiencias Del Nuevo Mundo</h1>
 
-                metaname = 
+                
 
-                <nav>
+                <nav class="nav-listado-centered">
+
                     <ul class="nav-list">
 
                         <li><a href="./index.html">Home</a>
@@ -77,9 +78,6 @@
 
                     </ul>
 
-
-
-
                 </nav>
 
             </div>
@@ -92,18 +90,30 @@
                 <p>Sumérgete en nuestro espacio de alojamientos temporales y vive una experiencia única llena de confort
                     y encanto</p>
 
-                <div class="search-box">
-                    <div>
-                        <input type="name" id="main-search" class="form-control" placeholder="A donde vas?" aria-labelledby="nameandsurname">
-                    </div>
-  
+               <div class="search-box">
+                <div>
+                    <input class="form-control" type="text" value="A donde vas..." aria-label="readonly input example"
+                      readonly>
+                  </div>
 
-                    <select name="Cantidad de personas" id="1 Adulto" aria-placeholder="Cantidad de personas"></select>
-                    <input type="date" name="05/24/2023" id="05/24/2023">
+                  <div>
+                    <select class="form-select " aria-label=".form-select-sm example">
+                        <option selected>Cantidad de personas</option>
+                        <option value="1">Uno</option>
+                        <option value="2">Dos</option>
+                        <option value="3">Tres</option>
+                      </select>
+                  </div>
+                  
 
-                    <button>Buscar</button>
+                  <div>
+                    <input class="form-control" type="date" aria-label="readonly input example"
+                      >
+                  </div>
 
-                </div>
+                  <button type="button" class="btn btn-primary">Buscar</button>
+            </div>
+
 
             </div>
 

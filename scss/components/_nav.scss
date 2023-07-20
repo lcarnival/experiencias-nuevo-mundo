@@ -1,0 +1,55 @@
+.nav-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-container nav {
+    width: 100%;
+
+}
+
+
+.nav-list {
+    display: flex;
+    justify-content:flex-end;
+    padding-left: 100px;
+    padding-right: 50px;
+    flex-wrap: wrap;
+}
+
+.nav-list li a {
+    color: white;
+}
+
+.nav-list li + li:before{
+    content: " | ";
+    padding: 0 40px ;
+    color: white;
+    
+}
+
+
+
+.nav-listado {
+    
+    display: flex;
+    justify-content:center;
+    padding-left: 100px;
+    padding-right: 50px;
+    flex-wrap: wrap;
+   
+}
+
+.list {
+    display: flex;
+    justify-content:flex-end;
+    padding-left: 100px;
+    padding-right: 50px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.identificador-secciones {
+    padding: 22px;
+    
+    }
