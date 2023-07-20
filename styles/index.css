@@ -365,10 +365,19 @@ h5 {
     padding-left: 50px;
 }
 
-/* Responsive Mobile Index */
+/* Responsive Mobile  */
 
 @media (max-width: 375px) {
     .card-container {
+        flex-direction: column;
+        
+    }
+
+    .card-container-housing {
+        max-height: none;
+    }
+
+    .search-lodgment {
         flex-direction: column;
     }
 
@@ -409,6 +418,11 @@ h5 {
         justify-content: center;
         width: 200px;
 
+    }
+
+    .filter-options {
+        display: flex;
+        flex-direction: column;
     }
 
 }
