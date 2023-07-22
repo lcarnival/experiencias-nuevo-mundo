@@ -111,13 +111,7 @@ main {
     margin: 0px;
 }
 
-.section-white {
-    background-color: white;
-}
 
-.section-grey {
-    background-color: #b6b6b6;
-}
 
 .card-container {
     display: flex;
@@ -146,7 +140,7 @@ main {
 
 }
 
-/*  Carousel de paisajes, actividades y alojamientos */
+/*  Carousel de paisajes, actividades y alojamientos  e index */
 
 .carousel-item {
     height: 400px;
@@ -160,7 +154,7 @@ h2 {
 
 }
 
-.final-list {
+.footer-list  {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -221,24 +215,9 @@ h2 {
 
 }
 
-.boton {
 
-    display: inline-block;
-    padding: 10px 20px;
-    border: 2px solid;
-    color: bisque;
-    text-align: center;
-}
 
-.look-activities {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    align-content: space-around;
-    gap: 15px;
 
-}
 
 
 h1 {
@@ -305,9 +284,7 @@ h5 {
 /*  Escapadas */
 
 
-.complete-page {
-    background-color: #fdedd8;
-}
+
 
 .list {
     display: flex;
@@ -368,6 +345,7 @@ h5 {
 /* Responsive Mobile  */
 
 @media (max-width: 375px) {
+
     .card-container {
         flex-direction: column;
         
@@ -391,7 +369,7 @@ h5 {
 
     }
 
-    .nav-listado {
+    .nav-listado-index {
         display: none;
     }
 
@@ -412,6 +390,8 @@ h5 {
         align-self: center;
         gap: 7px;
     }
+
+activities 
 
     .input-group {
         display: flex;

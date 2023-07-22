@@ -1,451 +1,483 @@
 * {
-    margin: 0;
-    padding: 0;
-
+  margin: 0;
+  padding: 0;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: black;
-}
-
-/*  inedex */
-
-.titulo-principal {
-    color: white;
-    font-family: fantasy;
-    font-size: xx-large;
-    width: 50%;
-    font-weight: 900;
-
-}
-
-.main-header {
-    background-image: url(../img/Alojamientos/portada\ casa.png);
-    height: 600px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
+  text-decoration: none;
+  color: black;
 }
 
 .nav-container {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .nav-container nav {
-    width: 100%;
-
+  width: 100%;
 }
 
 .nav-list {
-    display: flex;
-    justify-content: flex-end;
-    padding-left: 100px;
-    padding-right: 50px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 100px;
+  padding-right: 50px;
+  flex-wrap: wrap;
 }
 
 .nav-list li a {
-    color: white;
+  color: white;
 }
 
-.nav-list li+li:before {
-    content: " | ";
-    padding: 0 40px;
-    color: white;
-
+.nav-list li + li:before {
+  content: " | ";
+  padding: 0 40px;
+  color: white;
 }
-
-.reservation {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    align-content: space-around;
-    gap: 70px;
-
-}
-
-.reservation h2 {
-    color: white;
-}
-
-.search-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    gap: 5px;
-}
-
-
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 .main-section {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 50px 150px 50px 150px;
-    gap: 50px;
-
-
-}
-
-.title {
-    margin: 0px;
-}
-
-.section-white {
-    background-color: white;
-}
-
-.section-grey {
-    background-color: #b6b6b6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 150px 50px 150px;
+  gap: 50px;
 }
 
 .card-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 15px;
-}
-
-/* Esta en la seccion de alojamientos */
-
-.card-container-housing {
-    max-width: 900px;
-    flex-wrap: wrap;
-    max-height: 600px;
-    overflow-y: scroll;
-
-}
-
-.slide {
-    width: 40px;
-    height: 550px;
-}
-
-.carousel {
-    width: 100%;
-
-}
-
-/*  Carousel de paisajes, actividades y alojamientos */
-
-.carousel-item {
-    height: 400px;
-
-}
-
-
-h2 {
-    color: #344d60;
-    font-family: cursive;
-
-}
-
-.final-list {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    justify-content: safe;
-}
-
-.card-custom {
-    border: 1px solid #ccc;
-    border-radius: 7px;
-    box-shadow: 2px 2px 5px #b6b6b6;
-    padding: 10px;
-
-}
-
-.card-custom p {
-    text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
 }
 
 .hamburguer {
-    display: none;
-
+  display: none;
 }
 
-.search-activities {
-    justify-content: center !important;
-}
-
-/*  Responsive Tablet */
-
-
-
-
-
-/*  Activities */
-
-.identificador-secciones {
-    padding: 22px;
-
-}
-
-
-
-.list {
-    display: flex;
-    color: black;
-    justify-content: space-evenly;
-    padding-left: 100px;
-    padding-right: 50px;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-
-
-
-.select-small {
-    max-width: 40% !important;
-
-}
-
-.boton {
-
-    display: inline-block;
-    padding: 10px 20px;
-    border: 2px solid;
-    color: bisque;
-    text-align: center;
-}
-
-.look-activities {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    align-content: space-around;
-    gap: 15px;
-
-}
-
-
-h1 {
-    color: #344d60;
-    font-family: cursive;
-}
-
-h5 {
-    color: white;
-}
-
-.subtitle-card {
-    color: white;
-
-}
-
-
-
-
-
-.carrusel {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
-}
-
-.complete-page {
-
-    background: rgb(157, 199, 162);
-    background: linear-gradient(174deg, rgba(157, 199, 162, 1) 0%, rgba(255, 193, 60, 1) 100%);
-}
-
-
-
-.btn {
-    display: block;
-    width: auto;
-    border-radius: 5px;
-    padding: 5px;
-
-}
-
-.btn:hover {
-    background-color: rgb(197, 178, 143);
-
-}
-
-
-.final {
-
-    display: flex;
-    justify-content: center;
-    padding-left: 100px;
-    padding-right: 50px;
-    flex-wrap: wrap;
-
-
-}
-
-
-
-/*  Escapadas */
-
-
-.complete-page {
-    background-color: #fdedd8;
-}
-
-.list {
-    display: flex;
-    justify-content: flex-end;
-    padding-left: 100px;
-    padding-right: 50px;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-
-/* Lodgement */
-
-
-.filter-options {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 70px;
-}
-
-.icon-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.lodgment-options {
-    display: flex;
-    flex-direction: column;
-    margin-left: 50px;
-    margin-right: 50px;
-    gap: 20px;
-}
-
-.search-lodgment {
-    display: flex;
-    flex-direction: row;
-}
-
-.maps {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-right: 30px;
-    margin-top: 150px;
-}
-
-
-/* Perfil */
-
-.nav-list-center {
-    justify-content: center;
-    padding-left: 50px;
+.footer-list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: safe;
 }
 
 /* Responsive Mobile  */
-
 @media (max-width: 375px) {
-    .card-container {
-        flex-direction: column;
-        
-    }
-
-    .card-container-housing {
-        max-height: none;
-    }
-
-    .search-lodgment {
-        flex-direction: column;
-    }
-
-    .titulo-principal {
-        font-size: medium;
-    }
-
-    .main-header {
-        background-image: url(../img/Alojamientos/portada\ casa.png);
-        min-height: 277px;
-
-    }
-
-    .nav-listado {
-        display: none;
-    }
-
-    .nav-list {
-        display: none;
-    }
-
-
-    .hamburguer {
-        display: block;
-        padding-left: 20px;
-
-    }
-
-    .search-box {
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        gap: 7px;
-    }
-
-    .input-group {
-        display: flex;
-        justify-content: center;
-        width: 200px;
-
-    }
-
-    .filter-options {
-        display: flex;
-        flex-direction: column;
-    }
-
+  .card-container {
+    flex-direction: column;
+  }
+  .nav-list {
+    display: none;
+  }
+  .hamburguer {
+    display: block;
+    padding-left: 20px;
+  }
 }
-
 /* Responsive Tablet Index */
-
 @media (max-width: 1024px) and (min-width: 375px) {
-    .nav-list {
-        display: flex;
-        justify-content: center;
-        flex-wrap: nowrap;
-    }
-
-    .search-lodgment {
-        flex-direction: column;
-    }
-
-    .list {
-        display: flex;
-        justify-content: center;
-        padding-left: 0px;
-        padding-right:0px;
-    }
-
-
+  .nav-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .main-section {
+    padding: 50px;
+  }
 }
+.title {
+  margin: 0px;
+}
+
+h1 {
+  color: #344d60;
+  font-family: cursive;
+}
+
+.complete-page {
+  background: rgb(157, 199, 162);
+  background: linear-gradient(174deg, rgb(157, 199, 162) 0%, rgb(255, 193, 60) 100%);
+}
+
+.list {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 100px;
+  padding-right: 50px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+}
+
+.btn {
+  display: block;
+  width: auto;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.btn:hover {
+  background-color: rgb(197, 178, 143);
+}
+
+.identificador-secciones {
+  padding: 22px;
+}
+
+/* Responsive Mobile  */
+@media (max-width: 375px) {
+  .list {
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .input-group {
+    display: flex;
+    justify-content: center;
+    width: 250px;
+  }
+}
+.title {
+  margin: 0px;
+}
+
+h1 {
+  color: #344d60;
+  font-family: cursive;
+}
+
+.complete-page {
+  background: rgb(157, 199, 162);
+  background: linear-gradient(174deg, rgb(157, 199, 162) 0%, rgb(255, 193, 60) 100%);
+}
+
+.list {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 100px;
+  padding-right: 50px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.identificador-secciones {
+  padding: 22px;
+}
+
+.filter-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 70px;
+}
+
+.icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Responsive Mobile  */
+@media (max-width: 375px) {
+  .list {
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .filter-options {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-control {
+    width: 200px;
+  }
+}
+/* Responsive Tablet Index */
+@media (max-width: 1024px) and (min-width: 375px) {
+  .list {
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+.title {
+  margin: 0px;
+}
+
+.complete-page {
+  background: rgb(157, 199, 162);
+  background: linear-gradient(174deg, rgb(157, 199, 162) 0%, rgb(255, 193, 60) 100%);
+}
+
+.identificador-secciones {
+  padding: 22px;
+}
+
+.list {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 100px;
+  padding-right: 50px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 70px;
+}
+
+.icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-container-housing {
+  max-width: 900px;
+  flex-wrap: wrap;
+  max-height: 600px;
+  overflow-y: scroll;
+}
+
+.lodgment-options {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  padding-right: 50px;
+  gap: 20px;
+}
+
+.search-lodgment {
+  display: flex;
+  flex-direction: row;
+}
+
+.maps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 30px;
+  margin-top: 150px;
+}
+
+.btn {
+  display: block;
+  width: auto;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.btn:hover {
+  background-color: rgb(197, 178, 143);
+}
+
+.btn:click {
+  background-color: rgb(175, 132, 54);
+}
+
+/* Responsive Mobile  */
+@media (max-width: 375px) {
+  .search-lodgment {
+    flex-direction: column;
+  }
+  .search-box {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 7px;
+  }
+  .filter-options {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-container .card-container-housing {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* Responsive Tablet Index */
+@media (max-width: 1024px) and (min-width: 375px) {
+  .search-lodgment {
+    flex-direction: column;
+  }
+  .list {
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+.titulo-principal {
+  color: white;
+  font-family: fantasy;
+  font-size: xx-large;
+  width: 50%;
+  font-weight: 900;
+}
+
+h2 {
+  color: #344d60;
+  font-family: cursive;
+}
+
+.main-header {
+  background-image: url(../img/Alojamientos/portada\ casa.png);
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.reservation {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  align-content: space-around;
+  gap: 70px;
+}
+
+.reservation h2 {
+  color: white;
+}
+
+.search-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 5px;
+}
+
+.btn {
+  display: block;
+  width: auto;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.btn-primary {
+  background-color: rgb(209, 178, 120);
+  border-color: rgb(209, 178, 120);
+}
+
+.btn:hover {
+  background-color: rgb(197, 178, 143);
+  border-color: rgb(209, 178, 120);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.card-custom {
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  box-shadow: 2px 2px 5px #b6b6b6;
+  padding: 10px;
+}
+
+.carousel-item {
+  height: 400px;
+}
+
+/* Responsive Mobile  */
+@media (max-width: 375px) {
+  .titulo-principal {
+    font-size: medium;
+  }
+  .main-header {
+    background-image: url(../img/Alojamientos/portada\ casa.png);
+    min-height: 277px;
+  }
+  .nav-listado-index {
+    display: none;
+  }
+  .search-box {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 7px;
+  }
+}
+/* Responsive Tablet Index */
+@media (max-width: 1024px) and (min-width: 375px) {
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-header {
+    padding-top: 30px;
+    height: 500px;
+  }
+}
+h1 {
+  color: #344d60;
+  font-family: cursive;
+}
+
+.complete-page {
+  background: rgb(157, 199, 162);
+  background: linear-gradient(174deg, rgb(157, 199, 162) 0%, rgb(255, 193, 60) 100%);
+}
+
+.title {
+  margin: 0px;
+}
+
+.identificador-secciones {
+  padding: 22px;
+}
+
+.nav-list-center {
+  justify-content: center;
+  padding-left: 50px;
+}
+
+.list {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 100px;
+  padding-right: 50px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Responsive Tablet  */
+@media (max-width: 1024px) and (min-width: 375px) {
+  .list {
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

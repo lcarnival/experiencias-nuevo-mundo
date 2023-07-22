@@ -1,0 +1,136 @@
+@use '../base';
+
+.titulo-principal {
+    color: white;
+    font-family: fantasy;
+    font-size: xx-large;
+    width: 50%;
+    font-weight: 900;
+
+}
+
+h2 {
+    color: #344d60;
+    font-family: cursive;
+
+}
+
+.main-header {
+    background-image: url(../img/Alojamientos/portada\ casa.png);
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.reservation {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-content: space-around;
+    gap: 70px;
+
+}
+
+.reservation h2 {
+    color: white;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 5px;
+}
+
+
+.btn {
+    display: block;
+    width: auto;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+.btn-primary {
+    background-color: rgb(209, 178, 120);
+    border-color: rgb(209, 178, 120);
+}
+
+.btn:hover {
+    background-color: rgb(197, 178, 143);
+    border-color: rgb(209, 178, 120);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+}
+
+
+
+.card-custom {
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px #b6b6b6;
+    padding: 10px;
+
+}
+
+.carousel-item {
+    height: 400px;
+
+}
+
+
+/* Responsive Mobile  */
+
+@media (max-width: 375px) {
+
+    .titulo-principal {
+        font-size: medium;
+    }
+
+    .main-header {
+        background-image: url(../img/Alojamientos/portada\ casa.png);
+        min-height: 277px;
+
+    }
+
+    .nav-listado-index {
+        display: none;
+    }
+
+    .search-box {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        gap: 7px;
+    }
+
+}
+
+/* Responsive Tablet Index */
+
+@media (max-width: 1024px) and (min-width: 375px) {
+
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-header {
+        padding-top: 30px;
+        height: 500px;
+    }
+
+}

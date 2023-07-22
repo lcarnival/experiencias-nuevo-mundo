@@ -1,0 +1,55 @@
+@use '../base';
+
+h1 {
+    color: #344d60;
+    font-family: cursive;
+}
+
+.complete-page {
+
+    background: rgb(157, 199, 162);
+    background: linear-gradient(174deg, rgba(157, 199, 162, 1) 0%, rgba(255, 193, 60, 1) 100%);
+}
+
+.title {
+    margin: 0px;
+}
+
+.identificador-secciones {
+    padding: 22px;
+
+}
+
+
+.nav-list-center {
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.list {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 100px;
+    padding-right: 50px;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+
+
+/* Responsive Tablet  */
+
+@media (max-width: 1024px) and (min-width: 375px)  {
+
+    
+    .list {
+        display: flex;
+        justify-content: center;
+        padding-left: 0px;
+        padding-right:0px;
+    }
+
+    
+
+}

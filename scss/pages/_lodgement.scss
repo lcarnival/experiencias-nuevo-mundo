@@ -1,0 +1,134 @@
+@use '../base';
+
+.title {
+    margin: 0px;
+}
+
+.complete-page {
+
+    background: rgb(157, 199, 162);
+    background: linear-gradient(174deg, rgba(157, 199, 162, 1) 0%, rgba(255, 193, 60, 1) 100%);
+}
+
+.identificador-secciones {
+    padding: 22px;
+
+}
+
+.list {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 100px;
+    padding-right: 50px;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.filter-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 70px;
+}
+
+.icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.card-container-housing {
+    max-width: 900px;
+    flex-wrap: wrap;
+    max-height: 600px;
+    overflow-y: scroll;
+
+}
+
+.lodgment-options {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 20px;
+}
+
+.search-lodgment {
+    display: flex;
+    flex-direction: row;
+}
+
+.maps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 30px;
+    margin-top: 150px;
+}
+
+.btn {
+    display: block;
+    width: auto;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+.btn:hover {
+    background-color: rgb(197, 178, 143);
+
+
+}
+.btn:click {
+    background-color: rgb(175, 132, 54);
+
+}
+
+/* Responsive Mobile  */
+
+@media (max-width: 375px) {
+    
+    .search-lodgment {
+        flex-direction: column;
+    }
+
+    .search-box {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        gap: 7px;
+    }
+
+    .filter-options {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-container .card-container-housing {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
+/* Responsive Tablet Index */
+
+@media (max-width: 1024px) and (min-width: 375px) {
+    
+    .search-lodgment {
+        flex-direction: column;
+    }
+
+    .list {
+        display: flex;
+        justify-content: center;
+        padding-left: 0px;
+        padding-right:0px;
+    }
+
+
+    }
+
