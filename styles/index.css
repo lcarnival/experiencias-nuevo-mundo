@@ -15,6 +15,7 @@ a {
 .nav-container {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
 }
 
 .nav-container nav {
@@ -23,6 +24,7 @@ a {
 
 .nav-list {
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
   padding-left: 100px;
   padding-right: 50px;
@@ -42,12 +44,14 @@ a {
 main {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-content: center;
 }
 
 .main-section {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   padding: 50px 150px 50px 150px;
   gap: 50px;
@@ -67,8 +71,8 @@ main {
 .footer-list {
   display: flex;
   flex-direction: row;
-  gap: 10px;
   justify-content: safe;
+  gap: 70px;
 }
 
 /* Responsive Mobile  */
@@ -83,16 +87,21 @@ main {
     display: block;
     padding-left: 20px;
   }
+  .footer-list {
+    gap: 5px;
+  }
 }
 /* Responsive Tablet Index */
 @media (max-width: 1024px) and (min-width: 375px) {
   .nav-list {
-    display: flex;
     justify-content: center;
     flex-wrap: nowrap;
   }
   .main-section {
     padding: 50px;
+  }
+  .footer-list {
+    gap: 50px;
   }
 }
 .title {
@@ -111,6 +120,7 @@ h1 {
 
 .list {
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
   padding-left: 100px;
   padding-right: 50px;
@@ -120,6 +130,7 @@ h1 {
 
 .input-group {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   width: 400px;
 }
@@ -143,14 +154,122 @@ h1 {
 @media (max-width: 375px) {
   .list {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     padding-left: 0px;
     padding-right: 0px;
   }
   .input-group {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     width: 250px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.nav-container nav {
+  width: 100%;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-left: 100px;
+  padding-right: 50px;
+  flex-wrap: wrap;
+}
+
+.nav-list li a {
+  color: white;
+}
+
+.nav-list li + li:before {
+  content: " | ";
+  padding: 0 40px;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px 150px 50px 150px;
+  gap: 50px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+}
+
+.hamburguer {
+  display: none;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: safe;
+  gap: 70px;
+}
+
+/* Responsive Mobile  */
+@media (max-width: 375px) {
+  .card-container {
+    flex-direction: column;
+  }
+  .nav-list {
+    display: none;
+  }
+  .hamburguer {
+    display: block;
+    padding-left: 20px;
+  }
+  .footer-list {
+    gap: 5px;
+  }
+}
+/* Responsive Tablet Index */
+@media (max-width: 1024px) and (min-width: 375px) {
+  .nav-list {
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .main-section {
+    padding: 50px;
+  }
+  .footer-list {
+    gap: 50px;
   }
 }
 .title {
@@ -169,6 +288,7 @@ h1 {
 
 .list {
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
   padding-left: 100px;
   padding-right: 50px;
@@ -190,13 +310,13 @@ h1 {
 .icon-box {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
 }
 
 /* Responsive Mobile  */
 @media (max-width: 375px) {
   .list {
-    display: flex;
     justify-content: center;
     padding-left: 0px;
     padding-right: 0px;
@@ -204,6 +324,7 @@ h1 {
   .filter-options {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
   }
   .form-control {
     width: 200px;
@@ -213,9 +334,116 @@ h1 {
 @media (max-width: 1024px) and (min-width: 375px) {
   .list {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     padding-left: 0px;
     padding-right: 0px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.nav-container nav {
+  width: 100%;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-left: 100px;
+  padding-right: 50px;
+  flex-wrap: wrap;
+}
+
+.nav-list li a {
+  color: white;
+}
+
+.nav-list li + li:before {
+  content: " | ";
+  padding: 0 40px;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px 150px 50px 150px;
+  gap: 50px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+}
+
+.hamburguer {
+  display: none;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: safe;
+  gap: 70px;
+}
+
+/* Responsive Mobile  */
+@media (max-width: 375px) {
+  .card-container {
+    flex-direction: column;
+  }
+  .nav-list {
+    display: none;
+  }
+  .hamburguer {
+    display: block;
+    padding-left: 20px;
+  }
+  .footer-list {
+    gap: 5px;
+  }
+}
+/* Responsive Tablet Index */
+@media (max-width: 1024px) and (min-width: 375px) {
+  .nav-list {
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .main-section {
+    padding: 50px;
+  }
+  .footer-list {
+    gap: 50px;
   }
 }
 .title {
@@ -233,6 +461,7 @@ h1 {
 
 .list {
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
   padding-left: 100px;
   padding-right: 50px;
@@ -250,6 +479,7 @@ h1 {
 .icon-box {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -263,6 +493,7 @@ h1 {
 .lodgment-options {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   padding-left: 50px;
   padding-right: 50px;
   gap: 20px;
@@ -271,11 +502,13 @@ h1 {
 .search-lodgment {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
 }
 
 .maps {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   padding-right: 30px;
   margin-top: 150px;
@@ -304,16 +537,19 @@ h1 {
   .search-box {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-self: center;
     gap: 7px;
   }
   .filter-options {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
   }
   .card-container .card-container-housing {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
   }
 }
 /* Responsive Tablet Index */
@@ -323,12 +559,120 @@ h1 {
   }
   .list {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     padding-left: 0px;
     padding-right: 0px;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.nav-container nav {
+  width: 100%;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-left: 100px;
+  padding-right: 50px;
+  flex-wrap: wrap;
+}
+
+.nav-list li a {
+  color: white;
+}
+
+.nav-list li + li:before {
+  content: " | ";
+  padding: 0 40px;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px 150px 50px 150px;
+  gap: 50px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+}
+
+.hamburguer {
+  display: none;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: safe;
+  gap: 70px;
+}
+
+/* Responsive Mobile  */
+@media (max-width: 375px) {
+  .card-container {
+    flex-direction: column;
+  }
+  .nav-list {
+    display: none;
+  }
+  .hamburguer {
+    display: block;
+    padding-left: 20px;
+  }
+  .footer-list {
+    gap: 5px;
+  }
+}
+/* Responsive Tablet Index */
+@media (max-width: 1024px) and (min-width: 375px) {
+  .nav-list {
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .main-section {
+    padding: 50px;
+  }
+  .footer-list {
+    gap: 50px;
+  }
+}
 .titulo-principal {
+  padding: 15px;
   color: white;
   font-family: fantasy;
   font-size: xx-large;
@@ -357,6 +701,7 @@ h2 {
   color: white;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   margin: 20px;
   align-content: space-around;
   gap: 70px;
@@ -393,6 +738,7 @@ h2 {
 main {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-content: center;
 }
 
@@ -410,7 +756,8 @@ main {
 /* Responsive Mobile  */
 @media (max-width: 375px) {
   .titulo-principal {
-    font-size: medium;
+    font-size: xx-large;
+    margin: 10px;
   }
   .main-header {
     background-image: url(../img/Alojamientos/portada\ casa.png);
@@ -430,12 +777,118 @@ main {
 @media (max-width: 1024px) and (min-width: 375px) {
   .nav-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
     align-items: center;
   }
   .main-header {
     padding-top: 30px;
     height: 500px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.nav-container nav {
+  width: 100%;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-left: 100px;
+  padding-right: 50px;
+  flex-wrap: wrap;
+}
+
+.nav-list li a {
+  color: white;
+}
+
+.nav-list li + li:before {
+  content: " | ";
+  padding: 0 40px;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px 150px 50px 150px;
+  gap: 50px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+}
+
+.hamburguer {
+  display: none;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: safe;
+  gap: 70px;
+}
+
+/* Responsive Mobile  */
+@media (max-width: 375px) {
+  .card-container {
+    flex-direction: column;
+  }
+  .nav-list {
+    display: none;
+  }
+  .hamburguer {
+    display: block;
+    padding-left: 20px;
+  }
+  .footer-list {
+    gap: 5px;
+  }
+}
+/* Responsive Tablet Index */
+@media (max-width: 1024px) and (min-width: 375px) {
+  .nav-list {
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .main-section {
+    padding: 50px;
+  }
+  .footer-list {
+    gap: 50px;
   }
 }
 h1 {
@@ -463,6 +916,7 @@ h1 {
 
 .list {
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
   padding-left: 100px;
   padding-right: 50px;
@@ -474,6 +928,7 @@ h1 {
 @media (max-width: 1024px) and (min-width: 375px) {
   .list {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     padding-left: 0px;
     padding-right: 0px;

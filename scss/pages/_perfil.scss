@@ -1,4 +1,4 @@
-@use '../base';
+@import'../base';
 
 h1 {
     color: #344d60;
@@ -27,8 +27,8 @@ h1 {
 }
 
 .list {
-    display: flex;
-    justify-content: flex-end;
+
+    @include display-flex($justify: flex-end);
     padding-left: 100px;
     padding-right: 50px;
     flex-wrap: wrap;
@@ -44,8 +44,8 @@ h1 {
 
     
     .list {
-        display: flex;
-        justify-content: center;
+
+        @include display-flex($justify: center);
         padding-left: 0px;
         padding-right:0px;
     }

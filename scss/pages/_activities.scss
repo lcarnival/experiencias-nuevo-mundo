@@ -1,4 +1,4 @@
-@use '../base';
+@import '../base';
 
 
 .title {
@@ -18,8 +18,7 @@ h1 {
 }
 
 .list {
-    display: flex;
-    justify-content: flex-end;
+    @include display-flex($justify: flex-end);
     padding-left: 100px;
     padding-right: 50px;
     flex-wrap: wrap;
@@ -27,8 +26,7 @@ h1 {
 }
 
 .input-group {
-    display: flex;
-    justify-content: center;
+    @include display-flex($justify: center);
     width: 400px;
 
 }
@@ -57,16 +55,14 @@ h1 {
 @media (max-width: 375px) {
 
     .list {
-        display: flex;
-        justify-content: center;
+        @include display-flex($justify: center);
         padding-left: 0px;
         padding-right: 0px;
     }
 
 
     .input-group {
-        display: flex;
-        justify-content: center;
+        @include display-flex($justify: center);
         width: 250px;
     
     }
