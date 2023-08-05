@@ -5,7 +5,6 @@
 }
 
 .complete-page {
-
     background: rgb(157, 199, 162);
     background: linear-gradient(174deg, rgba(157, 199, 162, 1) 0%, rgba(255, 193, 60, 1) 100%);
 }
@@ -97,11 +96,14 @@
         @include display-flex($direction: column);
     }
 
-    .card-container .card-container-housing {
-        @include display-flex($direction: column);
+    .card-container {
+
+        .card-container-housing {
+            @include display-flex($direction: column);
+        }
+    
     }
-
-
+    
 }
 
 /* Responsive Tablet Index */

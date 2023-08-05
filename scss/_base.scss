@@ -1,4 +1,3 @@
-
 @mixin display-flex($direction: row, $justify: flex-start) {
     display: flex;
     flex-direction: $direction;
@@ -23,11 +22,10 @@ a {
 
 .nav-container {
     @include display-flex;
-}
 
-.nav-container nav {
-    width: 100%;
-
+    nav {
+        width: 100%;
+    }
 }
 
 .nav-list {
@@ -35,18 +33,20 @@ a {
     padding-left: 100px;
     padding-right: 50px;
     flex-wrap: wrap;
+
+    li {
+        a {
+            color: white;
+        }
+    }
+
+    li+li:before {
+        content: " | ";
+        padding: 0 40px;
+        color: white;
+    }
 }
 
-.nav-list li a {
-    color: white;
-}
-
-.nav-list li+li:before {
-    content: " | ";
-    padding: 0 40px;
-    color: white;
-
-}
 
 
 main {
@@ -77,12 +77,17 @@ main {
 .footer-list {
     @include display-flex($justify: safe);
     gap: 70px;
-    
+
 }
 
 /* Responsive Mobile  */
 
 @media (max-width: 375px) {
+
+    .main-section {
+        padding: 50px;
+    }
+
     .card-container {
         flex-direction: column;
 
@@ -97,6 +102,7 @@ main {
         padding-left: 20px;
 
     }
+
     .footer-list {
         gap: 5px;
 
@@ -125,4 +131,3 @@ main {
 
 
 }
-

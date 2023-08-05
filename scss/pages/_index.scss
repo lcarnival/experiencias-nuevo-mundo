@@ -36,10 +36,9 @@ h2 {
     align-content: space-around;
     gap: 70px;
 
-}
-
-.reservation h2 {
-    color: white;
+    h2 {
+        color: white;
+    }
 }
 
 .search-box {
@@ -73,17 +72,24 @@ main {
 }
 
 
+.slide {
+margin-top: 10px;
+}
+
+.slide img {
+    height: 65vh;
+}
 
 .card-custom {
-    border: 1px solid #ccc;
+    background-color: white;
+    border: 1px solid #ebdcdc;
     border-radius: 7px;
-    box-shadow: 2px 2px 5px #b6b6b6;
+    box-shadow: 2px 2px 5px black;
     padding: 10px;
 
 }
 
-.carousel-item {
-    height: 400px;
+.button-index { gap: 30px;
 
 }
 
