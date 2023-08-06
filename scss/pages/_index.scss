@@ -89,7 +89,9 @@ margin-top: 10px;
 
 }
 
-.button-index { gap: 30px;
+.button-index { 
+    display: flex;
+    gap: 30px;
 
 }
 

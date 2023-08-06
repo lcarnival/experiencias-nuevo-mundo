@@ -767,6 +767,7 @@ main {
 }
 
 .button-index {
+  display: flex;
   gap: 30px;
 }
 
